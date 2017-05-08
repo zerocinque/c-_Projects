@@ -23,7 +23,12 @@ namespace CampoMinatoWF
         {
             Game game = new Game((Difficulty)CBDifficulty.SelectedItem);
             game.Show();
-            this.Hide();
+        }
+
+        private void buttonHistory_Click(object sender, EventArgs e)
+        {
+            WindowHistory wHistory= new WindowHistory();
+            wHistory.Show();
         }
     }
 }

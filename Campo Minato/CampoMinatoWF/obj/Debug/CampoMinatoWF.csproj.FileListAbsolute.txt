@@ -22,3 +22,4 @@ C:\Users\Utente\Desktop\ITS\.NET C#\cSharp_Projects\Campo Minato\CampoMinatoWF\o
 C:\Users\Utente\Desktop\ITS\.NET C#\cSharp_Projects\Campo Minato\CampoMinatoWF\obj\Debug\CampoMinatoWF.StartGame.resources
 C:\Users\Utente\Desktop\ITS\.NET C#\cSharp_Projects\Campo Minato\CampoMinatoWF\obj\Debug\CampoMinatoWF.Properties.Resources.resources
 C:\Users\Utente\Desktop\ITS\.NET C#\cSharp_Projects\Campo Minato\CampoMinatoWF\obj\Debug\CampoMinatoWF.csproj.GenerateResource.Cache
+C:\Users\Utente\Desktop\ITS\.NET C#\cSharp_Projects\Campo Minato\CampoMinatoWF\obj\Debug\CampoMinatoWF.WindowHistory.resources

@@ -34,11 +34,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.class1BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.buttonHistory = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.class1BindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // CBDifficulty
             // 
+            this.CBDifficulty.DisplayMember = "Intermedio";
             this.CBDifficulty.FormattingEnabled = true;
             this.CBDifficulty.Location = new System.Drawing.Point(151, 94);
             this.CBDifficulty.Name = "CBDifficulty";
@@ -48,11 +50,11 @@
             // 
             // ButtonStart
             // 
-            this.ButtonStart.Location = new System.Drawing.Point(97, 160);
+            this.ButtonStart.Location = new System.Drawing.Point(92, 155);
             this.ButtonStart.Name = "ButtonStart";
-            this.ButtonStart.Size = new System.Drawing.Size(75, 25);
+            this.ButtonStart.Size = new System.Drawing.Size(92, 25);
             this.ButtonStart.TabIndex = 1;
-            this.ButtonStart.Text = "Start Game";
+            this.ButtonStart.Text = "Gioca";
             this.ButtonStart.UseVisualStyleBackColor = true;
             this.ButtonStart.Click += new System.EventHandler(this.ButtonStart_Click);
             // 
@@ -75,11 +77,22 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "CAMPO MINATO";
             // 
+            // buttonHistory
+            // 
+            this.buttonHistory.Location = new System.Drawing.Point(92, 187);
+            this.buttonHistory.Name = "buttonHistory";
+            this.buttonHistory.Size = new System.Drawing.Size(92, 23);
+            this.buttonHistory.TabIndex = 4;
+            this.buttonHistory.Text = "Vedi lo storico";
+            this.buttonHistory.UseVisualStyleBackColor = true;
+            this.buttonHistory.Click += new System.EventHandler(this.buttonHistory_Click);
+            // 
             // StartGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Controls.Add(this.buttonHistory);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.ButtonStart);
@@ -99,6 +112,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.BindingSource class1BindingSource;
+        private System.Windows.Forms.Button buttonHistory;
     }
 }
 

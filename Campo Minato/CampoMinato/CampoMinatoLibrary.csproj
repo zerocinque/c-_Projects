@@ -49,9 +49,8 @@
     <Compile Include="Table.cs" />
     <Compile Include="Difficulty.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Timer.cs">
-      <SubType>Component</SubType>
-    </Compile>
+    <Compile Include="Timer.cs" />
+    <Compile Include="ViewHistory.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

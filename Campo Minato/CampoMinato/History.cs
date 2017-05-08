@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.Script.Serialization;
 
 namespace CampoMinato
 {
@@ -34,6 +36,37 @@ namespace CampoMinato
             Number_of_moves = num_moves;
             Win = win;
         }
-        
+
+        static public string jsonRead()
+        {
+            string jsonFilePath = @"C:\Users\Utente\Desktop\ITS\.NET C#\cSharp_Projects\Campo Minato\CampoMinato\history\history.json";
+            string jsonText = string.Empty;
+
+            if(!File.Exists(jsonFilePath))
+                jsonText = "non ci sono partite salvate";
+            else
+            {
+                using(TextReader tr = new StreamReader(jsonFilePath))
+                {
+                    jsonText = tr.ReadToEnd();
+                    tr.Dispose();
+                }
+                JavaScriptSerializer js = new JavaScriptSerializer();
+                List<History> storico = js.Deserialize<List<History>>(jsonText);
+
+                jsonText = string.Empty;
+                foreach(History h in storico)
+                    jsonText = string.Concat(jsonText, h.ToString());
+
+            }
+
+            return jsonText;
+        }
+
+        public override string ToString()
+        {
+            return string.Format("Difficoltà: {0}\r\nTempo impiegato: {1}\r\nMine Trovate: {2}\r\nNumero totale di mine: {3}\r\nNumero di mosse: {4}\r\n{5}\r\n\r\n", Game_level, Time_taken, Mines_found, Total_number_of_mine, Number_of_moves, Win?"VITTORIA":"SCONFITTA");
+        }
+
     }
 }
