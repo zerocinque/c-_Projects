@@ -17,7 +17,7 @@ namespace CampoMinatoWF
     {
         //costanti
         private const int INITIALLEFT = 7;
-        private const int INITIALTOP = 47;
+        private const int INITIALTOP = 70;
         private const int DIV = 1;
         private const int MISURA = 30;
 
@@ -36,6 +36,17 @@ namespace CampoMinatoWF
             table = new Table(diff);
             campo = new Button[table.Rows, table.Columns];
             isPlayng = false;
+            checkDifficultyMenu(diff);
+        }
+
+        private void checkDifficultyMenu(Difficulty diff)
+        {
+            switch (diff)
+            {
+                case Difficulty.PRINCIPIANTE: principianteToolStripMenuItem.Checked = true; break;
+                case Difficulty.INTERMEDIO: intermedioToolStripMenuItem.Checked = true; break;
+                case Difficulty.ESPERTO: espertoToolStripMenuItem.Checked = true; break;
+            }
         }
 
         private void Game_Load(object sender, EventArgs e)
@@ -71,13 +82,9 @@ namespace CampoMinatoWF
             timer = new CampoMinato.Timer();
             count = new Thread(timer.conta);
 
-
             TXTBomb.Text = table.Bombs.ToString();
             
-            Application.DoEvents();
-            
-            //startTimer();
-            
+            Application.DoEvents();            
         }
 
         private void Game_MouseUp(object sender, MouseEventArgs e)
@@ -100,7 +107,9 @@ namespace CampoMinatoWF
             {
                 isPlayng = true;
                 count.Start();
-
+                timer1.Start();
+                timer1.Interval = 1000;
+                timer1.Tick += Timer1_Tick;
             }
 
             switch (e.Button)
@@ -122,8 +131,13 @@ namespace CampoMinatoWF
                         {
                             #region cliccato su bomba
                             MessageBox.Show("BOOM!! Hai perso!");
+
+                            #region stop timer
                             count.Abort();
                             isPlayng = false;
+                            timer1.Stop();
+                            #endregion
+
                             table.Time_taken = timer.Tempo;
                             table.showAllBombs();
                             table.Mines_found = 0;
@@ -178,6 +192,7 @@ namespace CampoMinatoWF
             {
                 isPlayng = false;
                 count.Abort();
+                timer1.Stop();
                 table.Time_taken = timer.Tempo;
                 foreach (Button b in campo)
                 {
@@ -188,6 +203,11 @@ namespace CampoMinatoWF
             }
             #endregion
 
+        }
+
+        private void Timer1_Tick(object sender, EventArgs e)
+        {
+            TXTTime.Text = timer.Tempo.ToString();
         }
 
         private void rivelaCasella(int i, int j)
@@ -284,24 +304,44 @@ namespace CampoMinatoWF
             TXTBomb.Text = table.Bombs.ToString();
         }
 
-        private void timer1_Tick(object sender, EventArgs e)
+        private void esciToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (timer != null)
-            {
-                /*string txt = string.Empty;
-                int sec = timer.Tempo % 60;
-                int min = (timer.Tempo / 60) % 60;
-                int hour = (timer.Tempo / 3600) % 60;
-                TXTTime.Text = string.Format("{0}:{1}:{2}", sec, min, hour); */
-                TXTTime.Text = timer.Tempo.ToString();
-            }
+            this.Close();
+        }
+
+        private void nuovaPartitaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var win = new Game(diff);
+            win.Show();
+            this.Close();
+        }
+
+        private void visualizzaStoricoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            WindowHistory wHistory= new WindowHistory();
+            wHistory.Show();
+            this.Close();
+        }
+
+        private void principianteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var win = new Game(Difficulty.PRINCIPIANTE);
+            win.Show();
+            this.Close();
+        }
+
+        private void intermedioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var win = new Game(Difficulty.INTERMEDIO);
+            win.Show();
+            this.Close();
+        }
+
+        private void espertoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var win = new Game(Difficulty.ESPERTO);
+            win.Show();
+            this.Close();
         }
     }
 }
-
-
-
-/* 
- * timer
- * roba dei file
- */ 

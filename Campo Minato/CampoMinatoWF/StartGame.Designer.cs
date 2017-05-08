@@ -28,14 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.CBDifficulty = new System.Windows.Forms.ComboBox();
             this.ButtonStart = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.class1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.buttonHistory = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.class1BindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // CBDifficulty
@@ -99,7 +96,6 @@
             this.Controls.Add(this.CBDifficulty);
             this.Name = "StartGame";
             this.Text = "Campo Minato";
-            ((System.ComponentModel.ISupportInitialize)(this.class1BindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -111,7 +107,6 @@
         private System.Windows.Forms.Button ButtonStart;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.BindingSource class1BindingSource;
         private System.Windows.Forms.Button buttonHistory;
     }
 }
