@@ -17,6 +17,7 @@ namespace CampoMinato
         public int Number_of_moves { get; set; }
         public bool Win { get; set; }
 
+
         public History() { }
 
         public History(Difficulty diff, int mines_found, int num_moves, bool win)
@@ -29,21 +30,22 @@ namespace CampoMinato
 
         public History(Difficulty diff, long time_taken, int mines_found, int total_number_of_mine, int num_moves, bool win)
         {
-            Game_level = diff.ToString();
             Time_taken = time_taken;
-            Mines_found = mines_found;
             Total_number_of_mine = total_number_of_mine;
+            Game_level = diff.ToString();
+            Mines_found = mines_found;
             Number_of_moves = num_moves;
             Win = win;
+            //new History(diff, mines_found, num_moves, win);
         }
 
         static public string jsonRead()
         {
-            string jsonFilePath = @"C:\Users\Utente\Desktop\ITS\.NET C#\cSharp_Projects\Campo Minato\CampoMinato\history\history.json";
+            string jsonFilePath = AppDomain.CurrentDomain.BaseDirectory + @"..\..\..\CampoMinato\history\history.json";
             string jsonText = string.Empty;
 
             if(!File.Exists(jsonFilePath))
-                jsonText = "non ci sono partite salvate";
+                throw new FileNotExistsException();
             else
             {
                 using(TextReader tr = new StreamReader(jsonFilePath))
@@ -65,7 +67,7 @@ namespace CampoMinato
 
         public override string ToString()
         {
-            return string.Format("Difficoltà: {0}\r\nTempo impiegato: {1}\r\nMine Trovate: {2}\r\nNumero totale di mine: {3}\r\nNumero di mosse: {4}\r\n{5}\r\n\r\n", Game_level, Time_taken, Mines_found, Total_number_of_mine, Number_of_moves, Win?"VITTORIA":"SCONFITTA");
+            return string.Format("Difficoltà: {0}\r\nTempo impiegato: {1} secondi\r\nMine Trovate: {2}\r\nNumero totale di mine: {3}\r\nNumero di mosse: {4}\r\n{5}\r\n\r\n", Game_level, Time_taken, Mines_found, Total_number_of_mine, Number_of_moves, Win?"VITTORIA":"SCONFITTA");
         }
 
     }

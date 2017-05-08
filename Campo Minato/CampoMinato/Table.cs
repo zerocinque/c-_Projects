@@ -202,7 +202,8 @@ namespace CampoMinato
         }
         public void saveJsonHistory()
         {
-            string jsonFilePath = @"C:\Users\Utente\Desktop\ITS\.NET C#\cSharp_Projects\Campo Minato\CampoMinato\history\history.json";
+            //string jsonFilePath = @"C:\Users\Utente\Desktop\ITS\.NET C#\cSharp_Projects\Campo Minato\CampoMinato\history\history.json";
+            string jsonFilePath = AppDomain.CurrentDomain.BaseDirectory + @"..\..\..\CampoMinato\history\history.json";
             string jsonText = string.Empty;
             if (!File.Exists(jsonFilePath))
             {

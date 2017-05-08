@@ -74,11 +74,6 @@ namespace CampoMinatoWF
                 }
             }
 
-            /*CampoMinato.Timer TXTTime = new CampoMinato.Timer();
-            TXTTime.Location = new System.Drawing.Point(173, 12);
-            TXTTime.Name = "TXTTime";
-            this.Controls.Add(TXTTime);*/
-
             timer = new CampoMinato.Timer();
             count = new Thread(timer.conta);
 
@@ -172,7 +167,8 @@ namespace CampoMinatoWF
                     if (table.User[point.Row, point.Column] == 0 && table.Bombs > 0)
                     {
                         table.User[point.Row, point.Column] = 1;
-                        clickedButton.BackgroundImage = Image.FromFile(@"C:\Users\Utente\Desktop\ITS\.NET C#\cSharp_Projects\Campo Minato\CampoMinato\img\flag_red.png");
+                        string path = AppDomain.CurrentDomain.BaseDirectory + @"..\..\..\CampoMinato\img\flag_red.png";
+                        clickedButton.BackgroundImage = Image.FromFile(path);
                         table.Bombs--;
                         bombRefresh();
                     }
@@ -212,6 +208,9 @@ namespace CampoMinatoWF
 
         private void rivelaCasella(int i, int j)
         {
+            string bombPath = AppDomain.CurrentDomain.BaseDirectory + @"..\..\..\CampoMinato\img\bomb1.png";
+            string flagPath = AppDomain.CurrentDomain.BaseDirectory + @"..\..\..\CampoMinato\img\flag_red.png";
+
             if (table.User[i, j] == -1)
             {
                 campo[i, j].ForeColor = Color.Red;
@@ -219,17 +218,17 @@ namespace CampoMinatoWF
             else if (table.User[i, j] == -2)
             {
                 campo[i, j].ForeColor = Color.DarkRed;
-                campo[i, j].BackgroundImage = Image.FromFile(@"C:\Users\Utente\Desktop\ITS\.NET C#\cSharp_Projects\Campo Minato\CampoMinato\img\bomb1.png");
+                campo[i, j].BackgroundImage = Image.FromFile(bombPath);
             }
             else if (table.User[i, j] == -3)
             {
                 campo[i, j].ForeColor = Color.DarkRed;
-                campo[i, j].Image = Image.FromFile(@"C:\Users\Utente\Desktop\ITS\.NET C#\cSharp_Projects\Campo Minato\CampoMinato\img\bomb1.png");
+                campo[i, j].Image = Image.FromFile(bombPath);
             }
             else if (table.User[i, j] == 1)
             {
                 campo[i, j].BackgroundImage = null;
-                campo[i, j].Image = Image.FromFile(@"C:\Users\Utente\Desktop\ITS\.NET C#\cSharp_Projects\Campo Minato\CampoMinato\img\flag_red.png");
+                campo[i, j].Image = Image.FromFile(flagPath);
             }
         }
 

@@ -17,9 +17,9 @@ C:\Users\Utente\Desktop\ITS\.NET C#\cSharp_Projects\Campo Minato\CampoMinatoWF\b
 C:\Users\Utente\Desktop\ITS\.NET C#\cSharp_Projects\Campo Minato\CampoMinatoWF\bin\Debug\CampoMinatoWF.pdb
 C:\Users\Utente\Desktop\ITS\.NET C#\cSharp_Projects\Campo Minato\CampoMinatoWF\bin\Debug\CampoMinato.dll
 C:\Users\Utente\Desktop\ITS\.NET C#\cSharp_Projects\Campo Minato\CampoMinatoWF\bin\Debug\CampoMinato.pdb
-C:\Users\Utente\Desktop\ITS\.NET C#\cSharp_Projects\Campo Minato\CampoMinatoWF\obj\Debug\CampoMinatoWF.csprojResolveAssemblyReference.cache
 C:\Users\Utente\Desktop\ITS\.NET C#\cSharp_Projects\Campo Minato\CampoMinatoWF\obj\Debug\CampoMinatoWF.Game.resources
 C:\Users\Utente\Desktop\ITS\.NET C#\cSharp_Projects\Campo Minato\CampoMinatoWF\obj\Debug\CampoMinatoWF.StartGame.resources
 C:\Users\Utente\Desktop\ITS\.NET C#\cSharp_Projects\Campo Minato\CampoMinatoWF\obj\Debug\CampoMinatoWF.Properties.Resources.resources
 C:\Users\Utente\Desktop\ITS\.NET C#\cSharp_Projects\Campo Minato\CampoMinatoWF\obj\Debug\CampoMinatoWF.csproj.GenerateResource.Cache
 C:\Users\Utente\Desktop\ITS\.NET C#\cSharp_Projects\Campo Minato\CampoMinatoWF\obj\Debug\CampoMinatoWF.WindowHistory.resources
+C:\Users\Utente\Desktop\ITS\.NET C#\cSharp_Projects\Campo Minato\CampoMinatoWF\obj\Debug\CampoMinatoWF.csprojResolveAssemblyReference.cache

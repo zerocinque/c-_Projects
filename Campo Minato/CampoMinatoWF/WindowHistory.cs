@@ -20,7 +20,15 @@ namespace CampoMinatoWF
 
         private void WindowHistory_Load(object sender, EventArgs e)
         {
-            txtStorico.Text = History.jsonRead();
+            try
+            {
+                txtStorico.Text = History.jsonRead();
+            }
+            catch (FileNotExistsException)
+            {
+                MessageBox.Show("Non ci sono partite salvate.");
+                this.Close();
+            }
         }
     }
 }
