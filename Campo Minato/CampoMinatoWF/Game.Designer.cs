@@ -32,6 +32,7 @@
             this.TXTBomb = new System.Windows.Forms.TextBox();
             this.buttonGo = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.TXTTime = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // TXTBomb
@@ -59,12 +60,21 @@
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // TXTTime
+            // 
+            this.TXTTime.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.TXTTime.Location = new System.Drawing.Point(172, 11);
+            this.TXTTime.Name = "TXTTime";
+            this.TXTTime.Size = new System.Drawing.Size(100, 20);
+            this.TXTTime.TabIndex = 3;
+            // 
             // Game
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Controls.Add(this.TXTTime);
             this.Controls.Add(this.buttonGo);
             this.Controls.Add(this.TXTBomb);
             this.Name = "Game";
@@ -80,5 +90,6 @@
         private System.Windows.Forms.TextBox TXTBomb;
         private System.Windows.Forms.Button buttonGo;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.TextBox TXTTime;
     }
 }

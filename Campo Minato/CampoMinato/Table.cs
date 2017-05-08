@@ -202,7 +202,7 @@ namespace CampoMinato
         }
         public void saveJsonHistory()
         {
-            string jsonFilePath = @"C:\Users\Utente\Desktop\ITS\.NET C#\CampoMinato\CampoMinato\history\history.json";
+            string jsonFilePath = @"C:\Users\Utente\Desktop\ITS\.NET C#\cSharp_Projects\Campo Minato\CampoMinato\history\history.json";
             string jsonText = string.Empty;
             if (!File.Exists(jsonFilePath))
             {
@@ -210,8 +210,12 @@ namespace CampoMinato
                 using(TextWriter tw = new StreamWriter(jsonFilePath, false))
                 {
                     JavaScriptSerializer js = new JavaScriptSerializer();
-                    History game = (History)this;
-                    jsonText = js.Serialize(game);
+                    List<History> storico = new List<History>();
+
+                    History game = new History(difficulty, Time_taken, Mines_found, Total_number_of_mine, Number_of_moves, Win);
+                    storico.Add(game);
+
+                    jsonText = js.Serialize(storico);
                     tw.Write(jsonText);
                     tw.Flush();
                     tw.Dispose();
@@ -225,17 +229,13 @@ namespace CampoMinato
                     jsonText = tr.ReadToEnd();
                     tr.Dispose();
                 }
-                //File.Delete(jsonFilePath);
                 JavaScriptSerializer js = new JavaScriptSerializer();
                 List<History> storico = js.Deserialize<List<History>>(jsonText);
-                History game = (History)this;
+                History game = new History(difficulty, Time_taken, Mines_found, Total_number_of_mine, Number_of_moves, Win);
                 storico.Add(game);
 
                 jsonText = js.Serialize(storico);
-                if (jsonText[0] != '[')
-                    jsonText = string.Concat("[", jsonText);
-                //jsonText = js.Serialize(game);
-                using(TextWriter tw = new StreamWriter(jsonFilePath, true))
+                using(TextWriter tw = new StreamWriter(jsonFilePath, false))
                 {
                     tw.Write(jsonText);
                     tw.Flush();

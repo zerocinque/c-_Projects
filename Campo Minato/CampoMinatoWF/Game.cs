@@ -63,13 +63,13 @@ namespace CampoMinatoWF
                 }
             }
 
-            CampoMinato.Timer TXTTime = new CampoMinato.Timer();
+            /*CampoMinato.Timer TXTTime = new CampoMinato.Timer();
             TXTTime.Location = new System.Drawing.Point(173, 12);
             TXTTime.Name = "TXTTime";
-            this.Controls.Add(TXTTime);
+            this.Controls.Add(TXTTime);*/
 
-            //timer = new CampoMinato.Timer();
-            count = new Thread(TXTTime.conta);
+            timer = new CampoMinato.Timer();
+            count = new Thread(timer.conta);
 
 
             TXTBomb.Text = table.Bombs.ToString();
@@ -96,7 +96,7 @@ namespace CampoMinatoWF
 
             table.Number_of_moves++;
 
-            if (!isPlayng)
+            if (!isPlayng)//primo click parte il timer
             {
                 isPlayng = true;
                 count.Start();
@@ -158,7 +158,7 @@ namespace CampoMinatoWF
                     if (table.User[point.Row, point.Column] == 0 && table.Bombs > 0)
                     {
                         table.User[point.Row, point.Column] = 1;
-                        clickedButton.BackgroundImage = Image.FromFile(@"C:\Users\Utente\Desktop\ITS\.NET C#\CampoMinato\CampoMinato\img\flag_red.png");
+                        clickedButton.BackgroundImage = Image.FromFile(@"C:\Users\Utente\Desktop\ITS\.NET C#\cSharp_Projects\Campo Minato\CampoMinato\img\flag_red.png");
                         table.Bombs--;
                         bombRefresh();
                     }
@@ -199,17 +199,17 @@ namespace CampoMinatoWF
             else if (table.User[i, j] == -2)
             {
                 campo[i, j].ForeColor = Color.DarkRed;
-                campo[i, j].BackgroundImage = Image.FromFile(@"C:\Users\Utente\Desktop\ITS\.NET C#\CampoMinato\CampoMinato\img\bomb1.png");
+                campo[i, j].BackgroundImage = Image.FromFile(@"C:\Users\Utente\Desktop\ITS\.NET C#\cSharp_Projects\Campo Minato\CampoMinato\img\bomb1.png");
             }
             else if (table.User[i, j] == -3)
             {
                 campo[i, j].ForeColor = Color.DarkRed;
-                campo[i, j].Image = Image.FromFile(@"C:\Users\Utente\Desktop\ITS\.NET C#\CampoMinato\CampoMinato\img\bomb1.png");
+                campo[i, j].Image = Image.FromFile(@"C:\Users\Utente\Desktop\ITS\.NET C#\cSharp_Projects\Campo Minato\CampoMinato\img\bomb1.png");
             }
             else if (table.User[i, j] == 1)
             {
                 campo[i, j].BackgroundImage = null;
-                campo[i, j].Image = Image.FromFile(@"C:\Users\Utente\Desktop\ITS\.NET C#\CampoMinato\CampoMinato\img\flag_red.png");
+                campo[i, j].Image = Image.FromFile(@"C:\Users\Utente\Desktop\ITS\.NET C#\cSharp_Projects\Campo Minato\CampoMinato\img\flag_red.png");
             }
         }
 
@@ -286,15 +286,15 @@ namespace CampoMinatoWF
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            //if (timer != null)
-            //{
+            if (timer != null)
+            {
                 /*string txt = string.Empty;
                 int sec = timer.Tempo % 60;
                 int min = (timer.Tempo / 60) % 60;
                 int hour = (timer.Tempo / 3600) % 60;
                 TXTTime.Text = string.Format("{0}:{1}:{2}", sec, min, hour); */
-                //TXTTime.Text = timer.Tempo.ToString();
-            //}
+                TXTTime.Text = timer.Tempo.ToString();
+            }
         }
     }
 }

@@ -2,3 +2,7 @@ C:\Users\Utente\Desktop\ITS\.NET C#\CampoMinato\CampoMinato\bin\Debug\CampoMinat
 C:\Users\Utente\Desktop\ITS\.NET C#\CampoMinato\CampoMinato\bin\Debug\CampoMinato.pdb
 C:\Users\Utente\Desktop\ITS\.NET C#\CampoMinato\CampoMinato\obj\Debug\CampoMinato.dll
 C:\Users\Utente\Desktop\ITS\.NET C#\CampoMinato\CampoMinato\obj\Debug\CampoMinato.pdb
+C:\Users\Utente\Desktop\ITS\.NET C#\cSharp_Projects\Campo Minato\CampoMinato\bin\Debug\CampoMinato.dll
+C:\Users\Utente\Desktop\ITS\.NET C#\cSharp_Projects\Campo Minato\CampoMinato\bin\Debug\CampoMinato.pdb
+C:\Users\Utente\Desktop\ITS\.NET C#\cSharp_Projects\Campo Minato\CampoMinato\obj\Debug\CampoMinato.dll
+C:\Users\Utente\Desktop\ITS\.NET C#\cSharp_Projects\Campo Minato\CampoMinato\obj\Debug\CampoMinato.pdb

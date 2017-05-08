@@ -3,7 +3,7 @@ using System.Windows.Forms;
 
 namespace CampoMinato
 {
-    public class Timer:TextBox
+    public class Timer
     {
         public int Tempo { get; set; }
         //private Label label;
@@ -18,8 +18,8 @@ namespace CampoMinato
         {
             while (true)
             {
-                //Tempo++;
-                Text = (Tempo++).ToString();
+                Tempo++;
+                //Text = (Tempo++).ToString();
                 Thread.Sleep(1000);
             }
         }
