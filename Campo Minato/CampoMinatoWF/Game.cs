@@ -37,6 +37,8 @@ namespace CampoMinatoWF
             campo = new Button[table.Rows, table.Columns];
             isPlayng = false;
             checkDifficultyMenu(diff);
+            Icon = Icon.ExtractAssociatedIcon(AppDomain.CurrentDomain.BaseDirectory + @"..\..\..\CampoMinato\img\icon.ico");
+
         }
 
         private void checkDifficultyMenu(Difficulty diff)

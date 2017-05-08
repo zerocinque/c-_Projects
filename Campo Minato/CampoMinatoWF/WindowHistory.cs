@@ -16,6 +16,7 @@ namespace CampoMinatoWF
         public WindowHistory()
         {
             InitializeComponent();
+            Icon = Icon.ExtractAssociatedIcon(AppDomain.CurrentDomain.BaseDirectory + @"..\..\..\CampoMinato\img\icon.ico");
         }
 
         private void WindowHistory_Load(object sender, EventArgs e)

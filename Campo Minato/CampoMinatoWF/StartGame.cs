@@ -17,6 +17,7 @@ namespace CampoMinatoWF
         {
             InitializeComponent();
             CBDifficulty.DataSource = Enum.GetValues(typeof(Difficulty));
+            Icon = Icon.ExtractAssociatedIcon(AppDomain.CurrentDomain.BaseDirectory + @"..\..\..\CampoMinato\img\icon.ico");
         }
 
         private void ButtonStart_Click(object sender, EventArgs e)

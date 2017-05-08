@@ -1,0 +1,11 @@
+C:\Users\Utente\Desktop\ITS\.NET C#\cSharp_Projects\BlackJack\BlackjackWindowsForm\bin\Debug\BlackjackWindowsForm.exe.config
+C:\Users\Utente\Desktop\ITS\.NET C#\cSharp_Projects\BlackJack\BlackjackWindowsForm\bin\Debug\BlackjackWindowsForm.exe
+C:\Users\Utente\Desktop\ITS\.NET C#\cSharp_Projects\BlackJack\BlackjackWindowsForm\bin\Debug\BlackjackWindowsForm.pdb
+C:\Users\Utente\Desktop\ITS\.NET C#\cSharp_Projects\BlackJack\BlackjackWindowsForm\obj\Debug\BlackjackWindowsForm.csprojResolveAssemblyReference.cache
+C:\Users\Utente\Desktop\ITS\.NET C#\cSharp_Projects\BlackJack\BlackjackWindowsForm\obj\Debug\BlackjackWindowsForm.WindowBlackJack.resources
+C:\Users\Utente\Desktop\ITS\.NET C#\cSharp_Projects\BlackJack\BlackjackWindowsForm\obj\Debug\BlackjackWindowsForm.Properties.Resources.resources
+C:\Users\Utente\Desktop\ITS\.NET C#\cSharp_Projects\BlackJack\BlackjackWindowsForm\obj\Debug\BlackjackWindowsForm.csproj.GenerateResource.Cache
+C:\Users\Utente\Desktop\ITS\.NET C#\cSharp_Projects\BlackJack\BlackjackWindowsForm\obj\Debug\BlackjackWindowsForm.exe
+C:\Users\Utente\Desktop\ITS\.NET C#\cSharp_Projects\BlackJack\BlackjackWindowsForm\obj\Debug\BlackjackWindowsForm.pdb
+C:\Users\Utente\Desktop\ITS\.NET C#\cSharp_Projects\BlackJack\BlackjackWindowsForm\bin\Debug\BlackJackLibrary.dll
+C:\Users\Utente\Desktop\ITS\.NET C#\cSharp_Projects\BlackJack\BlackjackWindowsForm\bin\Debug\BlackJackLibrary.pdb

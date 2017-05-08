@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlackJackLibrary", "BlackJa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlackJack", "BlackJack\BlackJack.csproj", "{8A89DCCE-A9B7-48BB-BD7B-3D75432E3D94}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlackjackWindowsForm", "BlackjackWindowsForm\BlackjackWindowsForm.csproj", "{CF1FA644-D586-4BBF-8A8C-8E4359F6D57C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{8A89DCCE-A9B7-48BB-BD7B-3D75432E3D94}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8A89DCCE-A9B7-48BB-BD7B-3D75432E3D94}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8A89DCCE-A9B7-48BB-BD7B-3D75432E3D94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF1FA644-D586-4BBF-8A8C-8E4359F6D57C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF1FA644-D586-4BBF-8A8C-8E4359F6D57C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF1FA644-D586-4BBF-8A8C-8E4359F6D57C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF1FA644-D586-4BBF-8A8C-8E4359F6D57C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
