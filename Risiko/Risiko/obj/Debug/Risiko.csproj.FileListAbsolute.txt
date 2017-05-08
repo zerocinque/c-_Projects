@@ -1,0 +1,5 @@
+C:\Users\Utente\documents\visual studio 2015\Projects\Risiko\Risiko\obj\Debug\Risiko.csprojResolveAssemblyReference.cache
+C:\Users\Utente\documents\visual studio 2015\Projects\Risiko\Risiko\bin\Debug\Risiko.dll
+C:\Users\Utente\documents\visual studio 2015\Projects\Risiko\Risiko\bin\Debug\Risiko.pdb
+C:\Users\Utente\documents\visual studio 2015\Projects\Risiko\Risiko\obj\Debug\Risiko.dll
+C:\Users\Utente\documents\visual studio 2015\Projects\Risiko\Risiko\obj\Debug\Risiko.pdb

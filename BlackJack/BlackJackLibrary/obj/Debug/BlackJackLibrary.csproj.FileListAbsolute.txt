@@ -1,0 +1,5 @@
+C:\Users\Utente\Desktop\ITS\.NET C#\BlackJack\BlackJackLibrary\bin\Debug\BlackJackLibrary.dll
+C:\Users\Utente\Desktop\ITS\.NET C#\BlackJack\BlackJackLibrary\bin\Debug\BlackJackLibrary.pdb
+C:\Users\Utente\Desktop\ITS\.NET C#\BlackJack\BlackJackLibrary\obj\Debug\BlackJackLibrary.csprojResolveAssemblyReference.cache
+C:\Users\Utente\Desktop\ITS\.NET C#\BlackJack\BlackJackLibrary\obj\Debug\BlackJackLibrary.dll
+C:\Users\Utente\Desktop\ITS\.NET C#\BlackJack\BlackJackLibrary\obj\Debug\BlackJackLibrary.pdb

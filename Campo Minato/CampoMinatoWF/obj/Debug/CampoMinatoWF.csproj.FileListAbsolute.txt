@@ -1,0 +1,12 @@
+C:\Users\Utente\Desktop\ITS\.NET C#\CampoMinato\CampoMinatoWF\bin\Debug\CampoMinatoWF.exe.config
+C:\Users\Utente\Desktop\ITS\.NET C#\CampoMinato\CampoMinatoWF\bin\Debug\CampoMinatoWF.exe
+C:\Users\Utente\Desktop\ITS\.NET C#\CampoMinato\CampoMinatoWF\bin\Debug\CampoMinatoWF.pdb
+C:\Users\Utente\Desktop\ITS\.NET C#\CampoMinato\CampoMinatoWF\bin\Debug\CampoMinato.dll
+C:\Users\Utente\Desktop\ITS\.NET C#\CampoMinato\CampoMinatoWF\bin\Debug\CampoMinato.pdb
+C:\Users\Utente\Desktop\ITS\.NET C#\CampoMinato\CampoMinatoWF\obj\Debug\CampoMinatoWF.csprojResolveAssemblyReference.cache
+C:\Users\Utente\Desktop\ITS\.NET C#\CampoMinato\CampoMinatoWF\obj\Debug\CampoMinatoWF.Properties.Resources.resources
+C:\Users\Utente\Desktop\ITS\.NET C#\CampoMinato\CampoMinatoWF\obj\Debug\CampoMinatoWF.csproj.GenerateResource.Cache
+C:\Users\Utente\Desktop\ITS\.NET C#\CampoMinato\CampoMinatoWF\obj\Debug\CampoMinatoWF.exe
+C:\Users\Utente\Desktop\ITS\.NET C#\CampoMinato\CampoMinatoWF\obj\Debug\CampoMinatoWF.pdb
+C:\Users\Utente\Desktop\ITS\.NET C#\CampoMinato\CampoMinatoWF\obj\Debug\CampoMinatoWF.Game.resources
+C:\Users\Utente\Desktop\ITS\.NET C#\CampoMinato\CampoMinatoWF\obj\Debug\CampoMinatoWF.StartGame.resources

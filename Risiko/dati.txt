@@ -1,0 +1,54 @@
+// devo decrementare id(primo numero) di 1
+// devo aggiungere id bonus dopo id stato
+// aggiungere id continente dopo nome continente
+
+
+5 42
+NORD_AMERICA 9 5
+Alaska 1 3 2 4 31
+Territori_Del_Nord_Ovest 2 4 1 3 4 5
+Groenlandia 3 4 2 5 6 14
+Alberta 4 4 1 2 5 7
+Ontario 5 6 2 3 4 6 8 7 
+Quebec 6 3 3 5 8
+Stati_Uniti_Occidentali 7 4 4 5 8 9 
+Stati_Uniti_Orientali 8 4 5 6 7 9
+America_Centrale 9 3 8 7 10
+SUD_AMERICA 4 2
+Venezuela 10
+Perù 11
+Brasile 12
+Argentina 13
+EUROPA 7 5
+Islanda 14
+Scandinavia 15
+Gran_Bretagna 16
+Europa_Settentrionale 17
+Europa_Occidentale 18
+Europa_Meridionale 19
+Ucraina 20
+AFRICA 6 3
+l'Africa_del Nord 21
+Egitto 22
+Congo 23
+Africa_Orientale 24
+Africa_del_Sud 25
+Madagascar 26
+ASIA 12 7
+Urali 27
+Siberia 28
+Jacuzia 29
+Cita 30
+Kamchatka 31
+Giappone 32
+Mongolia 33
+Afghanistan 34
+Medio Oriente 35
+India 36
+Cina 37
+Siam 38
+OCEANIA 4 2
+Indonesia 39
+Nuova_Guinea 40
+Australia_Orientale 41
+Australia_Occidentale 42
